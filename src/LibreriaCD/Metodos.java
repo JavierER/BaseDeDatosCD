@@ -108,6 +108,9 @@ public class Metodos {
         return rs;
     }
      
+     /**
+     * corta la conexion con la bd
+     */
      public void apagar() {
         try {
             conexion.close();
