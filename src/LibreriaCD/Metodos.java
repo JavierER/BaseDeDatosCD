@@ -71,6 +71,14 @@ public class Metodos {
         }
     }
      
+     /**
+     * varia el valor de un campo segun el PK dado
+     *
+     * @param tabla recoge el nombre de la tabla
+     * @param campo recoge el nombre del campo anterior
+     * @param dato recoge el nuevo valor del campo
+     * @param primaryKey recoge el numero de la fila
+     */
      public void update(String tabla, String campo, String dato, int primaryKey) {
         PreparedStatement u;
         try {
@@ -81,7 +89,7 @@ public class Metodos {
             Logger.getLogger(Metodos.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-     
+      
      public ResultSet select(String tabla, String campos) {
         Statement s;
         try {
