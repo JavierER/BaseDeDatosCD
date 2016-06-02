@@ -54,6 +54,12 @@ public class Metodos {
         }
     }
     
+    /**
+     * borra de la tabla filas, según el PrimaryKey introducido
+     *
+     * @param tabla recoge el nombre de la tabla
+     * @param primaryKey recoge el numero de la fila
+     */
      public void delete(String tabla, int primaryKey) {
         PreparedStatement d;
         try {
