@@ -89,7 +89,14 @@ public class Metodos {
             Logger.getLogger(Metodos.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-      
+     
+     /**
+     * consulta la tabla
+     *
+     * @param tabla recoge el nombre de la tabla
+     * @param campos recoge los campos a consultar
+     * @return
+     */
      public ResultSet select(String tabla, String campos) {
         Statement s;
         try {
