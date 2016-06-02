@@ -19,6 +19,13 @@ public class Metodos {
     private Connection conexion = null;
     private ResultSet rs = null;
     
+    /**
+     * conecta con la base, con el driver y parámetros
+     *
+     * @param url recoge el nombre de la base
+     * @param usuario recoge el nombre de usuario conectado a la base
+     * @param contra recoge la contraseña del usuario conectado a la base
+     */
     public void connect(String url, String usuario, String contra) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
