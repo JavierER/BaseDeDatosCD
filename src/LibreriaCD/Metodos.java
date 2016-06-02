@@ -35,8 +35,14 @@ public class Metodos {
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(Metodos.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
+    } 
     
+    /**
+     * mete en la tabla los valores
+     *
+     * @param tabla recoge el nombre de la tabla en la que se realiza el insert
+     * @param datos recoge los datos dados a la tabla
+     */
     public void insert(String tabla, String datos) {
         PreparedStatement i;
         try {
